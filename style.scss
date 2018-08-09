@@ -1,0 +1,47 @@
+$black: black;
+$bg: grey;
+$canvasbg: white;
+$hover: grey;
+
+html{
+  backkground-color: $bg;
+  background-image:url("http://fc09.deviantart.net/fs71/i/2013/352/8/1/newspaper_collage_texture_by_flordeneu-d6yeuvs.jpg")
+}
+button{
+  position:absolute;
+  left:160px;
+  bottom:10px;
+}
+#controls{
+  float:left;
+  li{ list-style:none; }
+  #red_btn{}
+  #blue_btn{}
+  #green_btn{}
+}
+#container{
+  height:400px;
+  width:350px;
+  position:fixed;
+  border: solid black 1px;
+  background-color: $canvasbg;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  &:hover {cursor: pointer; }
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+  td{
+  float:right;
+  border:1px solid lighten($black ,97%);
+  color: lighten($black ,95%);
+  /*background-color: grey;*/
+  height:20px;
+  width:10px;
+  padding:2px 6px;
+  font-size:20px;
+  &:hover{ color:$hover; }
+}
